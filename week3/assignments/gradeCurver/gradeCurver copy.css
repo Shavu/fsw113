@@ -1,0 +1,37 @@
+.gradeWrapper {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  border: 1px solid blue;
+  border-radius: 12px;
+  padding: 10px;
+  background-image: linear-gradient(darkblue, skyblue);
+}
+
+.gradeHeading {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+.gradeInput {
+  border: 0px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: skyblue;
+  margin-top: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gradeDiv {
+  margin: 0 auto;
+  border: 0px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: skyblue;
+  margin-top: 25px;
+  width: 90%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

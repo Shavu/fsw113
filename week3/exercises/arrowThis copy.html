@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <title>JavaScript This</title>
+        <button id='btn' title='button'>Click Me</button>
+    </body>
+    <script>
+        let demo = function() {
+            console.log(this)
+        }
+
+        // let demo = () => console.log(this)
+
+        window.addEventListener('load', demo)
+
+        document.getElementById('btn').addEventListener('click', demo)
+
+    </script>
+</html>
