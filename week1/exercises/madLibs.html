@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mad Libs Generator</title>
+        <style>
+            body {
+                font-family: Verdana, Geneva, Tahoma;
+            }
+            .madLibWrapper {
+                border: black 2px solid;
+                border-radius: 8px;
+                padding: 5px;
+                width: 300px;
+                display: grid;
+                grid-template-columns: 100px 200px;
+                margin: 0 auto;
+            }
+            .madLibSpanner {
+                text-align: center;
+                padding: 5px;
+                font-weight: 700;
+                grid-column: span 2;
+            }
+
+            .madLibText {
+                border-radius: 4px;
+                background-color: silver;
+                width: 300px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style='text-align:center;' id='title'>Mad Libs Generator</h1>
+        <div class='madLibWrapper'>
+            <div class='madLibSpanner'>Provide a name,<br />two adjectives, and a noun</div>
+            <div>Name:</div>
+            <div><input style='width:90%' id='name' /></div>
+            <div>Adjective 1:</div>
+            <div><input style='width:90%' id='adj1' /></div>
+            <div>Adjective 2:</div>
+            <div><input style='width:90%' id='adj2' /></div>
+            <div>Noun:</div>
+            <div><input style='width:90%' id='noun' /></div>
+            <div class='madLibSpanner' style="text-align: right; padding: 10px;">
+                <button id='submit' onc Submit</button>
+            </div>
+        </div>
+        <br /><br />
+        <div id='madLibText' class='madLibText'></div>
+    </body>
+    <script>
+        document.getElementById('submit').addEventListener( 'click', function() { doMadLib() } )
+        document.getElementById('name').addEventListener( 'keyup', function() { doMadLib() } )
+        function doMadLib() {
+            const name =  document.querySelector('#name').value
+            const adj1 = document.querySelector('#adj1').value
+            const adj2 = document.querySelector('#adj2').value
+            const noun = document.querySelector('#noun').value
+            const madLibText = `${name} is a ${adj1}, ${adj2} ${noun}`
+            document.querySelector('#madLibText').innerText = madLibText
+        }
+    </script>
+</html>
+

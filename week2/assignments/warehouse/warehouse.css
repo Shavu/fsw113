@@ -1,0 +1,63 @@
+.letterhead {
+  margin: 0 auto;
+  width: 800px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: xx-large;
+}
+
+.slogan {
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+  font-family: cursive;
+  font-size: small;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.orderWrapper {
+  margin: 0 auto;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 75% 22%;
+  column-gap: 25px;
+  row-gap: 10px;
+}
+
+.orderDetails {
+  grid-row: span 4;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+}
+
+.detailHeader {
+  text-align: center;
+  background-color: silver;
+  border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.sidebar {
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;
+  background-color: silver;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+  padding: 4px;
+}
+
+.bottomBar {
+  font-weight: 700;
+  margin: 0 auto;
+  width: 800px;
+  margin-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+

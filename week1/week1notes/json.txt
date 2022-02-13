@@ -1,0 +1,46 @@
+#JSON
+- Javascript object Notation
+- JSON is a data format for transferring data that shares a strong resemblance to a Javascript object. 
+- JSON can be used to transfer:
+    - strings
+    - numbers 
+    - booleans
+    - arrays
+    - objects
+- JSON can be coverted to javascript using the JSON.parse() method.
+- Javascript can be convert to JSON using the JSON.stingify() method.
+
+Rules:
+- MUST USE DOUBLE QUOTES.
+- No trailing come on the last entry in a JSON object. 
+- jsonlint.com - validate your json data. 
+
+example data.json 
+{
+    "name" : "John"
+    "age" : 20 // number no double QUOTE
+    "isAlive" ; true,
+    "friends" : ("sam" , "jane" , "max"),
+    "address" : {
+        "street" : "123 street",
+        "city" : "seattle"
+    }
+
+}
+
+example real jsondate
+
+{
+    "data" :
+    "name" : "John"
+    "age" : 20 // number no double QUOTE
+    "isAlive" ; true,
+    "friends" : ("sam" , "jane" , "max"),
+    "address" : {
+        "street" : "123 street",
+        "city" : "seattle"
+    }
+
+}
+
+

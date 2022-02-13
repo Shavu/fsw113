@@ -1,0 +1,105 @@
+A loop usually has one or more of the following features:
+A counter, which is initialized with a certain value — this is the starting point of the loop
+A condition, which is a true/false test to determine whether the loop continues to run or stops — usually when the counter reaches a certain value.
+An iterator, which generally increments the counter by a small amount on each successive loop until the condition is no longer true.
+Use the “break” statement to immediately exit the loop
+
+loos - for
+//The for statement loops through a block of code a specified number of times.
+for (counter; condition; iterator) {
+    // code to run
+  }
+  
+  const cats = ["Zelda", "Holly", "Adzuki", "Cocoa"]
+  let textStr = "My cat's names are: "
+  
+  for(let i=0; i < cats.length; i++) {
+      if (i != cats.length-1)
+         textStr += cats[i] + ", "
+      else
+         textStr += "and " + cats[i]
+  }
+  
+  console.log(textStr)   // My cat's names are: Zelda, Holly, Adzuki, and Cocoa
+
+
+  loops - for...of
+  The for…in statement loops through the properties of an object
+  for (variable in object) {
+    // code to run
+  }
+  
+  const car = {color: “Black", make: "Nissan", model: "Rogue"} 
+  var textStr = ""
+  for(let val in car) {
+      textStr += car[val] + " "
+  }
+  
+  console.log(textStr)  // output: Black Nissan Rogue
+
+  loops for...in
+  The for…of statement loops through values of an iterable object
+  for (variable of iterable) {
+    // code to run
+  }
+  
+  const cats = ["Zelda", "Holly", "Adzuki", "Cocoa"]
+  let textStr = "My cat's names are: "
+  
+  for(let cat of cats) {
+      textStr += cat + ", "
+  }
+  
+  console.log(textStr)  
+  // My cat's names are: Zelda, Holly, Adzuki, Cocoa, 
+
+  loops - while
+  The while loops through a block of code while a condition is true.
+  counter
+  while (condition) {
+    // code to run
+  
+    iterator
+  }
+
+  const cats = ["Zelda", "Holly", "Adzuki", "Cocoa"]
+let textStr = "My cat's names are: "
+
+let i = 0
+
+while (i < cats.length) {
+   if (i != cats.length-1)
+       textStr += cats[i] + ", "
+   else
+       textStr += "and " + cats[i]
+
+   i++
+}
+
+loops - do while
+The do…while loops through a block of code once, then repeats while a specified condition is true.
+counter
+do {
+  // code to run
+
+  iterator
+} while (condition)
+
+
+const cats = ["Zelda", "Holly", "Adzuki", "Cocoa"]
+let textStr = "My cat's names are: "
+
+let i = 0
+
+do {
+   if (i != cats.length-1)
+       textStr += cats[i] + ", "
+   else
+       textStr += "and " + cats[i]
+
+   i++
+} while (i < cats.length)
+
+
+
+  

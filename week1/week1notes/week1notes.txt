@@ -1,0 +1,42 @@
+Empowers Over 95% of The Web (Links to an external site.) – As of 2018, 95% of the Internet was powered by JavaScript. The stats are likely to increase in the near future.
+Excellent Choice of Frameworks – AngularJS, Ember.js Metero.js, ReactJS, and VueJS are just a few of the wide variety of frameworks available for JavaScript.
+Superfast – ECMAScript 6 and related technologies are developed for modern web requirements, where speed is a must..
+Readily Available Packages – There is a package for almost everything you can think of. Npm is the world’s largest software registry with a total of over 800,000 build blocks (Links to an external site.). So, the possibilities of creating with JavaScript are simply immense. 
+
+
+Server side:
+APIs  application program interface
+    Define intractions.
+    Process client requests.
+    Perform Actions.
+    Allow Server Responses.
+
+-learnITs
+  1  In programming we commonly use interfaces to abstract operations and provide a concise way to interact between a host and a user. An API stands for "Application Programming Interface" and is an interface that is usually expressed through shared protocols such as HTTP and relies on a standardized output format such as JSON.
+
+  2.JSON.stringify() (data) is a method that converts a value or object to a string and additionally has 2 optional parameters that include replacer and space.
+
+  3. To read, update, or delete a cookie you use the document.cookie property. Cookies are then commonly saved as name - value pairs.
+
+  4. Cookies are a small file about a user that allows information to be carried over from related website or different sessions. These are commonly used because the server forgets everything once a connection is shut down.
+
+  5. JSON.parse(string) primarily takes this data type as a parameter to construct a new JavaScript value or object.
+
+  6. The client (such as my browser) interacts directly with a server when I make a web request. The server then interacts with a/an API to return data back to the client.
+
+  7. If I wanted to get “Batman” as an output from the below code I would 
+  type;
+  superHero.character
+  let superHero = {
+  “name” : "Bruce Wayne",
+  “character” : "Batman"
+  }
+
+  8. If I run the following code car.year . I will get an error! This is because there is a trailing comma and therefore you are unable to parse all the values.
+
+  let car = {
+  “make” : "Toyota",
+  “model” : "Corolla",
+  “year” : "2011",
+  }
+  
