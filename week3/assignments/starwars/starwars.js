@@ -10,16 +10,16 @@ function fetchData() {
     queryType = document.querySelector("#queryType").value;
     itemID = document.querySelector("#itemID").value;
     // console.log(queryType, itemID);
-    getFromSWAPI(query, items);
+    getFromSWAPI(queryType, itemID);
 }
 
 
 function getFromSWAPI() {
     // assign values to any necessary variables
     fetch(`https://swapi.dev/api/${queryType}/${itemID}`)
-        .then(response => response.json());
-        .then(data => updateInfo(data));
-        .catch (err => console.warn(err));
+        .then(response => response.json())
+        .then(data => updateInfo(data))
+        .catch(err => console.warn(err));
 }
 
 
@@ -30,10 +30,19 @@ function getFromSWAPI() {
 // 'dataValue2' elements in starwars.html.
 
 function updateInfo(data) {
+    // console.log(data)
     const keys = Object.keys(data);
-    document.querySelector("dataLabel1").innerText = keys[0];
-    document.querySelector("dataLabel2").innerText = keys[5];
-    document.querySelector("dataValue1").innerText = data[keys[0]];
-    document.querySelector("dataValue2").innerText = data[keys[5]];
+    // console.log(keys)
+    document.querySelector("#dataLabel1").textContent = keys[0];
+    document.querySelector("#dataLabel2").innerText = keys[5];
+    document.querySelector("#dataValue1").innerText = data[keys[0]];
+    document.querySelector("#dataValue2").innerText = data[keys[5]];
+    checkQueryType()
 }
-   //Create if statement that checks the querytype (if the querytype if = to person)
+
+function checkQueryType() {
+    if (queryType == "people") return true;
+
+    else return false
+}
+
