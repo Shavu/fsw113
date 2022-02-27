@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Famous Dane's Travel Services</title>
+        <link rel='stylesheet' href='travel.css' />
+    </head>
+    <body>
+        <div class='wrapper'>
+            <img src='./travel.png' style='width:800px;' alt='Famous Dane's Travel Services'>
+            <div class='title'>
+                Quick Customer Reference
+                <select id='customer-id'>
+                    <option value=0>Select a Customer</option>
+                    <option value=1>Virginia Weekenders</option>
+                    <option value=2>Mobile Mobilers</option>
+                    <option value=3>Hearty Bucket Listers</option>
+                </select>
+            </div>
+
+            <div class='infowrapper'>
+                <div class='infoheader'>Contact Information</div>
+                <div class='infoheader'>Purchased Options</div>
+                <div class='infoheader'>Payments</div>
+
+                <div class='infocell' id='contactInfo'></div>
+                <div class='infocell' id='purchases'></div>
+                <div class='infocell' id='payments'></div>
+
+            </div>
+
+            <div class='balancewrapper'>
+                <div class='balanceheader'>Balance</div>
+                <div class='balancecell' id='balance'></div>
+            </div>
+
+        </div>
+    </body>
+
+    <script type='module' src='scripts/travel.js'></script>
+</html>

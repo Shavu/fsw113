@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='languages.css'>
+    </head>
+    <body>
+        <p style='text-align:center;'>Please fill in all the programming languages you know</p>
+        <div class='wrapper'>
+            <input id='lang0' /> <input id='lang1' />
+            <input id='lang2' /> <input id='lang3' />
+            <input id='lang4' /> <input id='lang5' />
+            <input id='lang6' /> <input id='lang7' />
+            <div class='spanner' style="text-align: right; padding: 10px;">
+                <button id='submit' onclick="chkLang(
+                    'JavaScript',
+                    document.querySelector('#lang0').value,
+                    document.querySelector('#lang1').value,
+                    document.querySelector('#lang2').value,
+                    document.querySelector('#lang3').value,
+                    document.querySelector('#lang4').value,
+                    document.querySelector('#lang5').value,
+                    document.querySelector('#lang6').value,
+                    document.querySelector('#lang7').value,
+                )">Submit</button>
+            </div>
+        </div>
+        <div id='TestResult' class='text'></div>
+    </body>
+    <script src='languages.js'></script>
+</html>

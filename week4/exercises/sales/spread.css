@@ -1,0 +1,52 @@
+.letterhead {
+  margin: 0 auto;
+  width: 500px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: xx-large;
+}
+
+.slogan {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  font-family: cursive;
+  font-size: small;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.reportWrapper {
+  margin: 0 auto;
+  width: 400px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  column-gap: 25px;
+  row-gap: 2px;
+}
+
+.header {
+  grid-column: span 2;
+  font-weight: 700;
+  background-color: silver;
+  padding: 2px;
+}
+
+.columnA {
+  padding-left: 10px;
+}
+
+.columnB {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.alert {
+  text-align: right;
+  padding-right: 10px;
+  color: yellow;
+  background-color: red;
+}

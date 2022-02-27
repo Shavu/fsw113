@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel='stylesheet' href='./survey.css' />
+    </head>
+    <body>
+        <div class='wrapper'>
+            <h3>Employee Feedback Form</h3>
+            <textarea 
+                id='SupervisorFeedback'
+                placeholder='Explain how your supervisor can do a better job'></textarea>
+            <textarea 
+                id='TeamFeedback' 
+                placeholder='Explain how your team could improve its performance'></textarea>
+            <textarea 
+                id='ITSupport' 
+                placeholder='Explain how you feel IT could provide better services'></textarea>
+            <button id='review'>Review Comments</button>
+            <div id='reviewPanel' class='reviewPanel'></div>
+            <button id='submit' style='visibility: hidden;'>Submit Comments</button>
+        </div>
+    </body>
+    <script src='./survey.js'></script>
+</html>

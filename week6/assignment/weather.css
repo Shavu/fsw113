@@ -1,0 +1,32 @@
+/* Modify these styles so that the elements on the HTML page display as they do in the example */
+
+.weatherWrapper {
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  font-size: large;
+  text-align: center;
+  font-weight: 700;
+  padding: 8px;
+}
+
+.data {
+  font-size: medium;
+  padding: 8px;
+  text-align: right;
+}
+
+.label {
+  font-size: medium;
+  padding: 8px;
+}
+
+.footer {
+  font-size: small;
+  text-align: center;
+  padding: 8px;
+}

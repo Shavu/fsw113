@@ -3,12 +3,21 @@
   border-radius: 8px;
   padding: 5px;
   width: 400px;
+  display: grid;
+  /* height: 10vh; */
+  grid-template-columns:1fr 1fr 1fr ;
+  grid-template-rows:25pt 25pt 25pt ;
+ 
+ 
+
   /* 
   use the CSS grid to display all five <div> elements contained within
   the 'queryWrapper' <div> on a row next to each other 
   */
   margin: 0 auto;
 }
+
+
 
 .dataWrapper {
   border-radius: 8px;

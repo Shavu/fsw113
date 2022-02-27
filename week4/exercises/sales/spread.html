@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sales Reconciliation</title>
+        <link rel='stylesheet' href='spread.css'>
+    </head>
+
+    <body>
+
+        <div class='letterhead'>Dinkelschüss Supply</div>
+        <div class='slogan'>The Nations Most Complete Brosperflach Supply Center since 1955</div>
+
+        <div id='citiesReport' class='reportWrapper'></div>
+
+        <div id='regionalReport' class='reportWrapper'>
+
+            <div class='header'>Regional Reporting vs. City Reporting</div>
+
+            <div class='columnA'>Total Sales Reported by Cities</div>
+            <div class='columnB' id='citySales'></div>
+ 
+            <div class='columnA'>Total Sales Reported by Regions</div>
+            <div class='columnB' id='regionalSales'></div>
+        </div>
+
+    </body>
+
+    <script src='./cityData.js'></script>
+    <script src='./regionalData.js'></script>
+    <script src='./spread.js'></script>
+</html>
