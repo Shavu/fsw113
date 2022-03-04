@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Current Weather</title>
-        <link rel='stylesheet' href='weather.css' />
-    </head>
 
-    <body>
-        <div class='weatherWrapper' style='background-color: black; color: white; border-radius: 8px;'>
-            <div class='header'>Current Weather Conditions</div>
+<head>
+    <title>Current Weather</title>
+    <link rel='stylesheet' href='weather.css' />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon2.ico">
+</head>
 
-            <div class='data' id='cityDiv'>
-                <input id='city' class='label' type='text' placeholder='Type city' style='width:95%;' />
-            </div>
-            <div class='data' id='goBttn'>
-                <button id='goBttn'>Go</button>
-            </div>
+<body>
+    <div class='weatherWrapper' style='background-color: black; color: white; border-radius: 8px;'>
+        <div class='header'>Current Weather Conditions</div>
 
-            <div id='tempLabel' class='label'>Temperature</div>
-            <div id='tempData' class='data'></div>
-
-            <div id='humidLabel' class='label'>Humidity</div>
-            <div id='humidData' class='data'></div>
-
-            <div id='conditionsLabel' class='label'>Conditions</div>
-            <div id='conditionsData' class='data'></div>
-
-            <div class='footer'>&copy; 2021 Socrates Online</div>
+        <div class='data' id='cityDiv'>
+            <input id='city' class='label' type='text' placeholder='Type city' style='width:95%;' />
+        </div>
+        <div class='data' id='goBttn'>
+            <button id='goBttn'>Go</button>
         </div>
 
-    </body>
+        <div id='tempLabel' class='label'>Temperature</div>
+        <div id='tempData' class='data'></div>
 
-    <!-- This app should use modularized scripts. Use the proper syntax to include whatever script(s) are necessary -->
+        <div id='humidLabel' class='label'>Humidity</div>
+        <div id='humidData' class='data'></div>
+
+        <div id='conditionsLabel' class='label'>Conditions</div>
+        <div id='conditionsData' class='data'></div>
+
+        <div class='footer'>&copy; 2021 Socrates Online</div>
+    </div>
+
+</body>
+<script type="module" src="./scripts/weather.js"></script>
+<!-- This app should use modularized scripts. Use the proper syntax to include whatever script(s) are necessary -->
+
 </html>
